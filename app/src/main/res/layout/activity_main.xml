@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:text="Cuál es la Bandera de..." />
+
+            <ImageButton
+                android:id="@+id/btn_bandera2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickPresionar"
+                android:tag="Peru"
+                app:srcCompat="@drawable/banera2" />
+
+            <ImageButton
+                android:id="@+id/btn_bandera1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickPresionar"
+                android:tag="RepublicaD"
+                app:srcCompat="@drawable/banera1" />
+
+            <ImageButton
+                android:id="@+id/btn_bandera3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickPresionar"
+                android:tag="Ecuador"
+                app:srcCompat="@drawable/bandera3" />
+
+            <ImageButton
+                android:id="@+id/btn_bandera4"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:onClick="onClickPresionar"
+                android:tag="Bolivia"
+                app:srcCompat="@drawable/bandera5" />
+
+            <ImageButton
+                android:id="@+id/btn_bandera5"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:onClick="onClickPresionar"
+                android:tag="Guatemala"
+                app:srcCompat="@drawable/imagen5" />
+
+            <ImageButton
+                android:id="@+id/btn_bandera6"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:onClick="onClickPresionar"
+                android:tag="Bandera1"
+                app:srcCompat="@drawable/bandera6" />
+
+            <ImageButton
+                android:id="@+id/btn_bandera7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickPresionar"
+                android:tag="Paraguay"
+                app:srcCompat="@drawable/bandera7" />
+
+            <ImageButton
+                android:id="@+id/btn_bandera8"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:onClick="onClickPresionar"
+                android:tag="Mexico"
+                app:srcCompat="@drawable/bandera8" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
